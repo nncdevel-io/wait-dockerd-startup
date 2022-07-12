@@ -1,4 +1,4 @@
-module github.com/nncdevel-io/wait-dockerd
+module github.com/nncdevel-io/wait-dockerd-startup
 
 go 1.17
 
