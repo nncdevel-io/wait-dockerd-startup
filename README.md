@@ -1,4 +1,4 @@
-# wait-dockerd
+# wait-dockerd-startup
 
 Wait until docker API(docker daemon) startup. 
 
@@ -11,7 +11,7 @@ go get github.com/nncdevel-io/wait-dockerd-startup
 ## Usage
 
 ```bash
-$ wait-dockerd --help
+$ wait-dockerd-startup --help
 Wait until docker daemon startup.
 
 Usage:
