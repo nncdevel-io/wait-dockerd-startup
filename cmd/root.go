@@ -18,7 +18,7 @@ var (
 )
 
 var rootCmd = &cobra.Command{
-	Use:   "wait-dockerd",
+	Use:   "wait-dockerd-startup",
 	Short: "Wait until docker daemon startup.",
 	RunE: func(cmd *cobra.Command, args []string) error {
 
