@@ -1,4 +1,5 @@
-package main
+//go:generate mockgen -source=$GOFILE -package=mock_$GOPACKAGE -destination=../mock/$GOPACKAGE/$GOFILE
+package app
 
 import (
 	"context"
@@ -10,12 +11,12 @@ type Checker interface {
 }
 
 type DefaultChecker struct {
-	client client.Client
+	client client.SystemAPIClient
 }
 
-func NewChecker(cli client.Client) Checker {
+func NewChecker(client client.SystemAPIClient) Checker {
 	return DefaultChecker{
-		client: cli,
+		client: client,
 	}
 }
 

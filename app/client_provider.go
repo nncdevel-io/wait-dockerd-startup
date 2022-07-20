@@ -1,4 +1,5 @@
-package main
+//go:generate mockgen -source=$GOFILE -package=mock_$GOPACKAGE -destination=../mock/$GOPACKAGE/$GOFILE
+package app
 
 import (
 	"github.com/docker/docker/client"
