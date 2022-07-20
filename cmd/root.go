@@ -36,9 +36,9 @@ var rootCmd = &cobra.Command{
 
 func init() {
 
-	rootCmd.PersistentFlags().DurationVarP(&initialDelay, "initial-delay", "i", 1*time.Second, "Initial delay")
+	rootCmd.PersistentFlags().DurationVarP(&initialDelay, "initial-delay", "i", 10*time.Second, "Initial delay")
 	rootCmd.PersistentFlags().DurationVarP(&period, "period", "p", 10*time.Second, "Check period.")
-	rootCmd.PersistentFlags().DurationVarP(&timeout, "timeout", "t", 1*time.Minute, "Docker API request timeout.")
+	rootCmd.PersistentFlags().DurationVarP(&timeout, "timeout", "t", 1*time.Second, "Docker API request timeout.")
 	rootCmd.PersistentFlags().IntVarP(&successThreshold, "success-threshold", "s", 1, "Threshold value for detect Succeed.")
 	rootCmd.PersistentFlags().IntVarP(&failureThreshold, "failure-threshold", "f", 10, "Threshold value for detect Failure.")
 
