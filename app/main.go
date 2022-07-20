@@ -20,7 +20,7 @@ func Main(options *Options) error {
 		return err
 	}
 
-	checker := NewChecker(&*cli)
+	checker := NewChecker(cli)
 
 	poller := NewPoller(checker, &PollingOptions{
 		Period:           options.Period,
