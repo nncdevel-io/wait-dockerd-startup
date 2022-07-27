@@ -1,4 +1,4 @@
-//go:generate mockgen -source=$GOFILE -package=mock_$GOPACKAGE -destination=./mock/$GOPACKAGE/$GOFILE
+//go:generate mockgen -source=$GOFILE -package=mock_$GOPACKAGE -destination=../mock/$GOPACKAGE/$GOFILE
 package app
 
 import "fmt"

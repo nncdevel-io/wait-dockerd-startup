@@ -2,7 +2,7 @@
 // Source: checker.go
 
 // Package mock_app is a generated GoMock package.
-package app
+package mock_app
 
 import (
 	reflect "reflect"
