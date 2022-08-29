@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/docker/docker v20.10.17+incompatible
-	github.com/onsi/gomega v1.20.0
+	github.com/onsi/gomega v1.20.1
 	github.com/sclevine/spec v1.4.0
 	github.com/spf13/cobra v1.5.0
 )
