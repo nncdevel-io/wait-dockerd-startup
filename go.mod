@@ -3,7 +3,7 @@ module github.com/nncdevel-io/wait-dockerd-startup
 go 1.17
 
 require (
-	github.com/docker/docker v20.10.17+incompatible
+	github.com/docker/docker v23.0.6+incompatible
 	github.com/onsi/gomega v1.27.1
 	github.com/sclevine/spec v1.4.0
 	github.com/spf13/cobra v1.6.1
@@ -20,7 +20,6 @@ require (
 	github.com/morikuni/aec v1.0.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/image-spec v1.0.2 // indirect
-	github.com/sirupsen/logrus v1.8.1 // indirect
 	golang.org/x/time v0.0.0-20220609170525-579cf78fd858 // indirect
 	gotest.tools/v3 v3.3.0 // indirect
 )
