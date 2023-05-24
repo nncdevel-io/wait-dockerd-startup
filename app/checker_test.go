@@ -3,13 +3,14 @@ package app_test
 import (
 	"context"
 	"fmt"
+	"testing"
+
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/events"
 	"github.com/docker/docker/api/types/registry"
 	"github.com/nncdevel-io/wait-dockerd-startup/app"
 	. "github.com/onsi/gomega"
 	"github.com/sclevine/spec"
-	"testing"
 )
 
 type SuccessClient struct{}
@@ -22,7 +23,7 @@ func (c *SuccessClient) RegistryLogin(ctx context.Context, auth types.AuthConfig
 	panic("implement me")
 }
 
-func (c *SuccessClient) DiskUsage(ctx context.Context) (types.DiskUsage, error) {
+func (c *SuccessClient) DiskUsage(ctx context.Context, opt types.DiskUsageOptions) (types.DiskUsage, error) {
 	panic("implement me")
 }
 
@@ -46,7 +47,7 @@ func (c *ErrorClient) RegistryLogin(ctx context.Context, auth types.AuthConfig) 
 	panic("implement me")
 }
 
-func (c *ErrorClient) DiskUsage(ctx context.Context) (types.DiskUsage, error) {
+func (c *ErrorClient) DiskUsage(ctx context.Context, opt types.DiskUsageOptions) (types.DiskUsage, error) {
 	panic("implement me")
 }
 
