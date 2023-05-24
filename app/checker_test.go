@@ -19,7 +19,7 @@ func (c *SuccessClient) Events(ctx context.Context, options types.EventsOptions)
 	panic("implement me")
 }
 
-func (c *SuccessClient) RegistryLogin(ctx context.Context, auth types.AuthConfig) (registry.AuthenticateOKBody, error) {
+func (c *SuccessClient) RegistryLogin(ctx context.Context, auth registry.AuthConfig) (registry.AuthenticateOKBody, error) {
 	panic("implement me")
 }
 
@@ -43,7 +43,7 @@ func (c *ErrorClient) Events(ctx context.Context, options types.EventsOptions) (
 	panic("implement me")
 }
 
-func (c *ErrorClient) RegistryLogin(ctx context.Context, auth types.AuthConfig) (registry.AuthenticateOKBody, error) {
+func (c *ErrorClient) RegistryLogin(ctx context.Context, auth registry.AuthConfig) (registry.AuthenticateOKBody, error) {
 	panic("implement me")
 }
 
