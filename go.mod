@@ -1,6 +1,6 @@
 module github.com/nncdevel-io/wait-dockerd-startup
 
-go 1.17
+go 1.21
 
 require (
 	github.com/docker/docker v24.0.4+incompatible
