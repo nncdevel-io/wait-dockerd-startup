@@ -6,7 +6,7 @@ require (
 	github.com/docker/docker v24.0.7+incompatible
 	github.com/onsi/gomega v1.28.0
 	github.com/sclevine/spec v1.4.0
-	github.com/spf13/cobra v1.7.0
+	github.com/spf13/cobra v1.8.0
 )
 
 require (
