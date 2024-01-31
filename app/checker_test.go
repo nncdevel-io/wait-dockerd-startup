@@ -8,6 +8,7 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/api/types/events"
 	"github.com/docker/docker/api/types/registry"
+	"github.com/docker/docker/api/types/system"
 	"github.com/nncdevel-io/wait-dockerd-startup/app"
 	. "github.com/onsi/gomega"
 	"github.com/sclevine/spec"
@@ -31,8 +32,8 @@ func (c *SuccessClient) Ping(ctx context.Context) (types.Ping, error) {
 	panic("implement me")
 }
 
-func (c *SuccessClient) Info(ctx context.Context) (types.Info, error) {
-	return types.Info{
+func (c *SuccessClient) Info(ctx context.Context) (system.Info, error) {
+	return system.Info{
 		ServerVersion: "dummy-server-version",
 	}, nil
 }
@@ -55,8 +56,8 @@ func (c *ErrorClient) Ping(ctx context.Context) (types.Ping, error) {
 	panic("implement me")
 }
 
-func (c *ErrorClient) Info(ctx context.Context) (types.Info, error) {
-	return types.Info{}, fmt.Errorf("dummy-error")
+func (c *ErrorClient) Info(ctx context.Context) (system.Info, error) {
+	return system.Info{}, fmt.Errorf("dummy-error")
 }
 
 func testChecker(t *testing.T, context spec.G, it spec.S) {
