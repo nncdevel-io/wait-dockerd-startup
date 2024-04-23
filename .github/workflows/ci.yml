@@ -1,6 +1,9 @@
 name: go-ci
 
-on: [push]
+on:
+  push:
+    tags-ignore:
+      - '**'
 
 jobs:
   setup:
