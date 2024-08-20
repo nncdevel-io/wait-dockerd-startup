@@ -16,7 +16,7 @@ import (
 
 type SuccessClient struct{}
 
-func (c *SuccessClient) Events(ctx context.Context, options types.EventsOptions) (<-chan events.Message, <-chan error) {
+func (c *SuccessClient) Events(ctx context.Context, options events.ListOptions) (<-chan events.Message, <-chan error) {
 	panic("implement me")
 }
 
@@ -40,7 +40,7 @@ func (c *SuccessClient) Info(ctx context.Context) (system.Info, error) {
 
 type ErrorClient struct{}
 
-func (c *ErrorClient) Events(ctx context.Context, options types.EventsOptions) (<-chan events.Message, <-chan error) {
+func (c *ErrorClient) Events(ctx context.Context, options events.ListOptions) (<-chan events.Message, <-chan error) {
 	panic("implement me")
 }
 
