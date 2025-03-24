@@ -3,7 +3,7 @@ module github.com/nncdevel-io/wait-dockerd-startup
 go 1.23.4
 
 require (
-	github.com/docker/docker v28.0.0+incompatible
+	github.com/docker/docker v28.0.2+incompatible
 	github.com/onsi/gomega v1.36.2
 	github.com/sclevine/spec v1.4.0
 	github.com/spf13/cobra v1.9.1
