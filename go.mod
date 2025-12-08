@@ -6,7 +6,7 @@ require (
 	github.com/docker/docker v28.1.1+incompatible
 	github.com/onsi/gomega v1.37.0
 	github.com/sclevine/spec v1.4.0
-	github.com/spf13/cobra v1.9.1
+	github.com/spf13/cobra v1.10.2
 )
 
 require (
@@ -20,7 +20,7 @@ require (
 	github.com/moby/docker-image-spec v1.3.1 // indirect
 	github.com/moby/sys/atomicwriter v0.1.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/spf13/pflag v1.0.6 // indirect
+	github.com/spf13/pflag v1.0.9 // indirect
 	go.opentelemetry.io/auto/sdk v1.1.0 // indirect
 	go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp v0.47.0 // indirect
 	go.opentelemetry.io/otel v1.34.0 // indirect
